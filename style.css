@@ -335,7 +335,7 @@ nav ul {
 #order input,
 #contact input {
     width: 573px;
-    margin-bottom: 3em;
+    margin-top: 3em;
 }
 #order label,
 #contact label {
@@ -370,5 +370,8 @@ nav ul {
     font-weight: 700;
     background-color: #fffc19;
     border: none;
+}
+.card p {
+    text-align: left;
 }
 }
