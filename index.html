@@ -84,6 +84,22 @@
             <span>Copyright 2018 - Pitstop.dk</span>
         </footer>
     </div>
+    <script>
+        function initMap() {
+          var uluru = {lat: 55.625541, lng: 12.0866101};
+          var map = new google.maps.Map(document.getElementById('map'), {
+            zoom: 3,
+            center: uluru
+          });
+          var marker = new google.maps.Marker({
+            position: uluru,
+            map: map
+          });
+        }
+      </script>
+      <script async defer
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAeKO3WIaZF9oZyRcP6JLXp8tz4WldC37c&callback=initMap">
+      </script>
 </body>
 
 </html>

@@ -59,6 +59,13 @@ main {
     flex-direction: column;
     margin: 0 auto;
 }
+#product {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    align-items: center;
+    text-align: center;
+}
 
 footer {
     width: 100%;
@@ -83,6 +90,11 @@ nav ul {
     margin-bottom: 80px;
     text-align: center;
 }
+#map {
+    height: 400px;
+    width: 80%;
+    margin: 5% 10%;
+   }
 #products article {
     display: flex;
     flex-direction: column;
@@ -108,13 +120,6 @@ nav ul {
     font-weight: 700;
     background-color: #fffc19;
     border: none;
-}
-#product {
-    display: flex;
-    flex-direction: column;
-    margin: 0 auto;
-    align-items: center;
-    text-align: center;
 }
 #product img {
     width: 100%;
@@ -273,9 +278,20 @@ nav ul {
 }
 
 @media screen and (min-width:85em) {
+    /*--- Font ---*/
+    h1 {
+        width: 100%;
+    }
     /*--- Layout ---*/
     nav {
         width: 259px;
+    }
+    main {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        margin: 0 auto;
     }
     /*------Module------*/
     #logo {
@@ -287,5 +303,11 @@ nav ul {
     }
     nav ul {
         display: block;
+    }
+    .front-info {
+        width: 45%;
+    }
+    #heroslider {
+        margin: 0 auto;
     }
 }
