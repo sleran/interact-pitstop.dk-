@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="da">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Racing+Sans+One" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+    <title>Pitstop.dk - Bestilling</title>
+</head>
+
+<body>
+    <div id="wrapper">
+            <nav>
+                    <a href="index.html">
+                            <img id="logo" src="img/logo.png" alt="Pitstop logo">
+                        </a>
+                        <h2>Menu</h2>
+                        <i class="fas fa-bars"></i>
+                <ul>
+                    <li>
+                        <a href="index.html">Forside</a>
+                    </li>
+                    <li>
+                        <a href="produkter.html">Produkter</a>
+                    </li>
+                    <li>
+                        <a href="kontakt.html">Kontakt</a>
+                    </li>
+                </ul>
+                <a href="https://www.facebook.com/" target="_blank">
+                    <i class="fab fa-facebook-square"></i>
+                </a>
+                <a href="https://plus.google.com" target="_blank">
+                    <i class="fab fa-google-plus"></i>
+                </a>
+                <a href="https://twitter.com" target="_blank">
+                    <i class="fab fa-twitter-square"></i>
+                </a>
+                <a href="https://linkedin.com" target="_blank">
+                    <i class="fab fa-linkedin"></i>
+                </a>
+            </nav>
+        <main id="bestilling">
+            <h1>Bestilling</h1>
+            <div id="YourOrder">
+                <h2>Din bestilling</h2>
+            </div>
+            <form id="order">
+                    <label for="navn" id="LabelNavn">Navn</label><input type="text" id="InputNavn">
+                    <p id="FejlBesked1"></p>
+                    <label for="adresse" id="LabelAdresse">Adresse</label><input type="text" id="InputAdresse">
+                    <p id="FejlBesked2"></p>
+                    <label for="by" id="LabelPostnummer">By</label><input type="text" id="InputPostnummer">
+                    <p id="FejlBesked3"></p>
+                    <label for="mail" id="LabelMail">E-Mail</label><input type="text" id="InputMail">
+                    <p id="FejlBesked4"></p>
+                    <label for="telefon" id="LabelTelefon">Tlf.</label><input type="text" id="InputTelefon">
+                    <p id="FejlBesked5"></p>
+                    <label for="kortnummer" id="LabelKortnummer">Kort nr.</label><input type="text" id="InputKortnummer">
+                    <p id="FejlBesked6"></p>
+                    <div class="card"><label for="maaned" id="LabelMaaned">Udløb måned</label><input type="text" id="InputMaaned">
+                    <p id="FejlBesked7"></p></div>
+                    <div class="card"><label for="aar" id="LabelAar">År</label><input type="text" id="InputAar">
+                    <p id="FejlBesked8"></p></div>
+                    <div class="card"><label for="cvc" id="LabelCvc">CVC</label><input type="text" id="InputCvc">
+                    <p id="FejlBesked9"></p></div>
+                    <button type="submit" id="InputSend">Køb</button>
+            </form>
+           
+        </main>
+        <footer>
+            <span>Copyright 2018 - Pitstop.dk</span>
+        </footer>
+    </div>
+</body>
+
+</html>
