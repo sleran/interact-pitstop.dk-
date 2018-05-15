@@ -84,32 +84,32 @@ function Valider() {
     }
     if (document.getElementById('InputMaaned').value == "") {
         AntalFejl += 1;
-        FejlBesked7 = "Skriv måneden dit kort udløber!";
+        FejlBesked7 = "Skriv måneden!";
     } else {
         var regexptal = /^[0-9]+$/;
         if (!regexptal.test(document.getElementById('InputMaaned').value)) {
             AntalFejl += 1;
-            FejlBesked7 += "Måneden må kun indeholde tal!";
+            FejlBesked7 += "Skal være tal!";
         }
     }
     if (document.getElementById('InputAar').value == "") {
         AntalFejl += 1;
-        FejlBesked8 = "Skriv året dit kort udløber!";
+        FejlBesked8 = "Skriv året!";
     } else {
         var regexptal = /^[0-9]+$/;
         if (!regexptal.test(document.getElementById('InputAar').value)) {
             AntalFejl += 1;
-            FejlBesked8 += "Året må kun indeholde tal!";
+            FejlBesked8 += "Skal være tal!";
         }
     }
     if (document.getElementById('InputCvc').value == "") {
         AntalFejl += 1;
-        FejlBesked9 = "Skriv dit CVC sikkerhednummer!";
+        FejlBesked9 = "Skriv CVC!";
     } else {
         var regexptal = /^[0-9]+$/;
         if (!regexptal.test(document.getElementById('InputCvc').value)) {
             AntalFejl += 1;
-            FejlBesked9 += "CVC'et må kun indeholde tal!";
+            FejlBesked9 += "Skal være tal!";
         }
     }
     //hvis der ingen fejl er gennemføres udfyldelsen af formen

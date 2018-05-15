@@ -169,6 +169,10 @@ nav ul {
     text-align: right;
     width: 64vw;
 }
+.card p {
+    display: flex;
+    align-content: flex-start;
+}
 #YourOrder {
     border: #1485cc 2px solid;
     width: 64vw;
@@ -370,8 +374,5 @@ nav ul {
     font-weight: 700;
     background-color: #fffc19;
     border: none;
-}
-.card p {
-    text-align: left;
 }
 }
