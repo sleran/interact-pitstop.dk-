@@ -9,41 +9,43 @@
     <link href="https://fonts.googleapis.com/css?family=Racing+Sans+One" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+    <script src="javascript/contactform.js"></script>
+    <script src="javascript/menu.js"></script>
     <title>Pitstop.dk - Kontakt</title>
 </head>
 
 <body>
     <div id="wrapper">
-            <nav>
-                    <a href="index.html">
-                            <img id="logo" src="img/logo.png" alt="Pitstop logo">
-                        </a>
-                        <h2>Menu</h2>
-                        <i class="fas fa-bars"></i>
-                <ul>
-                    <li>
-                        <a href="index.html">Forside</a>
-                    </li>
-                    <li>
-                        <a href="produkter.html">Produkter</a>
-                    </li>
-                    <li>
-                        <a href="kontakt.html">Kontakt</a>
-                    </li>
-                </ul>
-                <a href="https://www.facebook.com/" target="_blank">
-                    <i class="fab fa-facebook-square"></i>
+        <nav id="navi">
+            <a href="index.html">
+                    <img id="logo" src="img/logo.png" alt="Pitstop logo">
                 </a>
-                <a href="https://plus.google.com" target="_blank">
-                    <i class="fab fa-google-plus"></i>
-                </a>
-                <a href="https://twitter.com" target="_blank">
-                    <i class="fab fa-twitter-square"></i>
-                </a>
-                <a href="https://linkedin.com" target="_blank">
-                    <i class="fab fa-linkedin"></i>
-                </a>
-            </nav>
+                <h2>Menu</h2>
+               <a href="#" onclick="showMenu();"><i class="fas fa-bars"></i></a>
+        <ul id="menu">
+            <li>
+                <a href="index.html">Forside</a>
+            </li>
+            <li>
+                <a href="produkter.html">Produkter</a>
+            </li>
+            <li>
+                <a href="kontakt.html">Kontakt</a>
+            </li>
+        </ul><div id="social">
+        <a href="https://www.facebook.com/" target="_blank">
+            <i class="fab fa-facebook-square"></i>
+        </a>
+        <a href="https://plus.google.com" target="_blank">
+            <i class="fab fa-google-plus"></i>
+        </a>
+        <a href="https://twitter.com" target="_blank">
+            <i class="fab fa-twitter-square"></i>
+        </a>
+        <a href="https://linkedin.com" target="_blank">
+            <i class="fab fa-linkedin"></i>
+        </a></div>
+    </nav>
         <main id="contactUs">
             <h1>Kontakt</h1>
             
@@ -51,9 +53,9 @@
                     <label for="navn" id="LabelNavn">Navn</label><input type="text" id="InputNavn">
                     <p id="FejlBesked1"></p>
                     <label for="mail" id="LabelMail">E-Mail</label><input type="text" id="InputMail">
-                    <p id="FejlBesked2"></p>
-                    <label for="telefon" id="LabelTelefon">Tlf.</label><input type="text" id="InputTelefon">
                     <p id="FejlBesked3"></p>
+                    <label for="telefon" id="LabelTelefon">Tlf.</label><input type="text" id="InputTelefon">
+                    <p id="FejlBesked2"></p>
                     <label for="besked" id="LabelBesked">Besked</label><textarea type="text" id="InputBesked" rows="8" cols="77"></textarea>
                     <p id="FejlBesked4"></p>
                     <button type="submit" id="InputSend">Send</button>

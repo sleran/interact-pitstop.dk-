@@ -10,18 +10,19 @@
     <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
     <script src="javascript/slider.js"></script>
+    <script src="javascript/menu.js"></script>
     <title>Pitstop.dk - Forside</title>
 </head>
 
 <body>
     <div id="wrapper">
-        <nav>
+        <nav id="navi">
                 <a href="index.html">
                         <img id="logo" src="img/logo.png" alt="Pitstop logo">
                     </a>
                     <h2>Menu</h2>
-                    <i class="fas fa-bars"></i>
-            <ul>
+                   <a href="javascript: void(0)" onclick="showMenu();"><i class="fas fa-bars"></i></a>
+            <ul id="menu">
                 <li>
                     <a href="index.html">Forside</a>
                 </li>
@@ -32,6 +33,7 @@
                     <a href="kontakt.html">Kontakt</a>
                 </li>
             </ul>
+            <div id="social">
             <a href="https://www.facebook.com/" target="_blank">
                 <i class="fab fa-facebook-square"></i>
             </a>
@@ -44,6 +46,7 @@
             <a href="https://linkedin.com" target="_blank">
                 <i class="fab fa-linkedin"></i>
             </a>
+            </div>
         </nav>
         <main id="index">
             <h1>Forside</h1>
@@ -81,13 +84,13 @@
     </div>
     <script>
         function initMap() {
-          var uluru = {lat: 55.625541, lng: 12.0866101};
+          var roskilde = {lat: 55.625541, lng: 12.0866101};
           var map = new google.maps.Map(document.getElementById('map'), {
             zoom: 3,
-            center: uluru
+            center: roskilde
           });
           var marker = new google.maps.Marker({
-            position: uluru,
+            position: roskilde,
             map: map
           });
         }

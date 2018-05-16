@@ -45,8 +45,7 @@ span {
     flex-wrap: wrap;
 }
 nav {
-    width: 12.5vw;
-    min-width: 129px;
+    flex-basis: 129px;
     height: auto;
     display: flex;
     flex-direction: column;
@@ -54,20 +53,21 @@ nav {
     background-color: #ff0000;
 }
 main {
-    width: 77vw;
-    padding-top: 80px;
     display: flex;
     flex-direction: column;
-    margin: 0 auto;
+    flex: 1 2;
+    width: 64vw;
+    max-width: 100%;
+    padding-top: 80px;
+    margin: 0 2em;
 }
 #products {
     display: flex;
-    margin: 0 auto;
+    
 }
 #product {
     display: flex;
     flex-direction: column;
-    margin: 0 auto;
     align-items: center;
     text-align: center;
 }
@@ -87,7 +87,14 @@ nav ul {
     display: none;
     list-style: none;
     text-align: center;
-    margin-right: 2.5em;
+    margin: 2px 2.5em 3em 0;
+}
+#social {
+    display: flex;
+    flex-direction: column;
+    }
+.show {
+    width: 259px;
 }
 .front-info {
     border: #1485cc 3px solid;
@@ -145,6 +152,14 @@ nav ul {
     margin: 0 auto;
     width: 64vw;
 }
+#payment {
+    display: grid;
+    grid-template-rows: 200px;
+    grid-template-columns: 10vw 10vw 10vw;
+    grid-gap: 3em 9em;
+    grid-template-areas:
+        "1 2 3";
+}
 #contact textarea {
     border: #1485cc 2px solid;
     width: 64vw;
@@ -169,6 +184,10 @@ nav ul {
     text-align: right;
     width: 64vw;
 }
+.card p {
+    display: flex;
+    align-content: flex-start;
+}
 #YourOrder {
     border: #1485cc 2px solid;
     width: 64vw;
@@ -184,7 +203,7 @@ nav ul {
 #order #InputAar, 
 #order #InputMaaned, 
 #order #InputCvc {
-    width: 145px;
+    width: 14.2vw;
 }
 .card {
     display: flex;
@@ -280,6 +299,10 @@ nav ul {
     h1 {
         width: 100%;
     }
+    #contactUs h1,
+    #bestilling h1 {
+        margin-left: 4em;
+    }
     /*--- Layout ---*/
     nav {
         width: 259px;
@@ -287,9 +310,10 @@ nav ul {
     main {
         display: flex;
         flex-direction: row;
+        width: 64vw;
         flex-wrap: wrap;
         justify-content: space-between;
-        margin: 0 auto;
+        margin: 0 2em;
     }
     /*------Module------*/
     #logo {
@@ -302,6 +326,27 @@ nav ul {
     nav ul {
         display: block;
     }
+    #social {
+    display: grid;
+    grid-template-rows: 25px 25px;
+    grid-template-columns: 25px 25px;
+    grid-gap: 2em;
+    grid-template-areas:
+        "1 2"
+        "3 4";
+    }
+    .fa-facebook-square {
+        grid-area: 1;
+    }
+    .fa-google-plus {
+        grid-area: 2;
+    }
+    .fa-twitter-square {
+        grid-area: 3;
+    }
+    .fa-linkedin {
+        grid-area: 4;
+    }
     .front-info {
         width: 45%;
     }
@@ -311,9 +356,13 @@ nav ul {
     #products article {
         flex-direction: row;
     }
-    #products article img {
-        max-width: 246px;
-    }
+    #products article h2,
+    #products article p{
+        align-self: flex-start;
+    }  
+    #products article button {
+        align-self: flex-end;
+    }  
     #product article img {
         max-width: 340px;
         margin-bottom: 6em;
@@ -331,11 +380,12 @@ nav ul {
 #contact {
     max-width: 763px;
 }
+
 #contact textarea,
 #order input,
 #contact input {
     width: 573px;
-    margin-bottom: 3em;
+    margin-top: 3em;
 }
 #order label,
 #contact label {

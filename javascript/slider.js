@@ -6,7 +6,6 @@ document.addEventListener('DOMContentLoaded', function () {
     var heroSlider = document.getElementById('heroslider');
     var slides = Array.from(heroSlider.getElementsByTagName('li'));
     var sliderDots = document.getElementById('sliderdots');
-    var slideDirection = document.getElementById('slidedirection');
     var slideIndex = 0;
     var slideSpeed = 2000;
 
@@ -44,16 +43,6 @@ document.addEventListener('DOMContentLoaded', function () {
         }
         showSlide(slideIndex);
     }
-
-    function changeByArrow(event) {
-        if (event.target !== event.currentTarget) {
-            var direction = event.target.getAttribute('data-direction');
-            slideChanger(direction);
-        }
-
-        event.stopPropagation();
-    }
-
     function changeByKey(event) {
         if (event.keyCode === 39) {
             slideChanger('next');
@@ -74,7 +63,6 @@ document.addEventListener('DOMContentLoaded', function () {
 
     showSlide(slideIndex);
     sliderDots.addEventListener('click', changeByDot);
-    slideDirection.addEventListener('click', changeByArrow);
     document.addEventListener('keyup', changeByKey);
     heroSlider.addEventListener('mouseover', pauseSlideshow);
     heroSlider.addEventListener('mouseout', playSlideshow);
