@@ -45,8 +45,8 @@ span {
     flex-wrap: wrap;
 }
 nav {
-    width: 12.5vw;
-    min-width: 129px;
+    
+    width: 129px;
     height: auto;
     display: flex;
     flex-direction: column;
