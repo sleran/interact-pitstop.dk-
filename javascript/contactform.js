@@ -61,6 +61,7 @@ function Valider() {
     }
     //hvis der ingen fejl er gennemføres udfyldelsen af formen
     if (AntalFejl == 0) {
+        alert('Tak for din henvendelse, vi svarer så hurtigt vi kan');
         return true;
     }
     //Ellers gives fejlbeskeder i html'en (p-tagget)

@@ -87,7 +87,7 @@ nav ul {
     display: none;
     list-style: none;
     text-align: center;
-    margin-right: 2.5em;
+    margin: 2px 2.5em 3em 0;
 }
 .front-info {
     border: #1485cc 3px solid;

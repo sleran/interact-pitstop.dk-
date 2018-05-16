@@ -10,6 +10,7 @@
     <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
     <script src="javascript/slider.js"></script>
+    <script src="javascript/menu.js"></script>
     <title>Pitstop.dk - Forside</title>
 </head>
 
@@ -81,13 +82,13 @@
     </div>
     <script>
         function initMap() {
-          var uluru = {lat: 55.625541, lng: 12.0866101};
+          var roskilde = {lat: 55.625541, lng: 12.0866101};
           var map = new google.maps.Map(document.getElementById('map'), {
             zoom: 3,
-            center: uluru
+            center: roskilde
           });
           var marker = new google.maps.Marker({
-            position: uluru,
+            position: roskilde,
             map: map
           });
         }
