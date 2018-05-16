@@ -1,24 +1,13 @@
-window.addEventListener( 'load', function()
-{
+function showMenu() {
     'use strict';
-    clickMenu();
-});
-
-function clickMenu() {
-    'use strict';
-    for ( var i = 0; i < document.getElementsByTagName('nav').getElementsByClassName('fa-bars')[0]                  .length; i++ )
-    {
-        document.getElementsByTagName('nav').getElementsByClassName('fas fa-bars')[i].onclick = showMenu;
-    }
-}
-function showMenu()
-{
-    if( this.getElementsByTagName('nav')[0].getElementsByTagName('ul')[0].style.display != "flex" )
-    {
-        this.getElementsByTagName('nav')[0].getElementsByTagName('ul')[0].style.display = "flex";
-    }
-    else
-    {
-        this.getElementsByTagName('nav')[0].getElementsByTagName('ul')[0].style.display = "flex";
+    var menu = document.getElementById("menu");
+    var nav = document.getElementById("navi");
+    if (menu.style.display === "none") {
+        menu.style.display = "flex";
+        menu.style.flexDirection = "column";
+        nav.classList.add("show");
+    } else {
+        menu.style.display = "none";
+        nav.classList.remove("show");
     }
 }

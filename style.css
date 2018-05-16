@@ -89,6 +89,9 @@ nav ul {
     text-align: center;
     margin: 2px 2.5em 3em 0;
 }
+.show {
+    width: 259px;
+}
 .front-info {
     border: #1485cc 3px solid;
     margin-bottom: 80px;
